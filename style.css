@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/*---------- Achtergrond ----------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+  background-image: url("Afbeelding.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.gezicht {
+  position: absolute;
+  width: 25%;
+  margin: -320px 0 0 70%;
+}
+
+/*---------- Vormen ----------*/
+#circel1, #circel2, #circel3, #circel4, #circel5{
+  border-radius: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+#circel1 {
+  width: 6.5%;
+  padding-top: 6.5%;
+  background-color: #D43B38;
+  margin: 64px 0 0 10%;
+  animation: vormen 2.6s 1;
+}
+#circel2 {
+  width: 5.2%;
+  padding-top: 5.2%;
+  background-color: #D43B38;
+  margin: 505px 0 0 48%;
+  animation: vormen 2.7s 1;
+}
+#circel3 {
+  width: 2.5%;
+  padding-top: 2.5%;
+  background-color: #fff;
+  margin: 530px 0 0 7%;
+  animation: vormen 2.9s 1;
+}
+#circel4 {
+  width: 3%;
+  padding-top: 3%;
+  background-color: #fff;
+  margin: 155px 0 0 40%;
+  animation: vormen 3.2s 1;
+}
+#circel5 {
+  width: 2%;
+  padding-top: 2%;
+  background-color: #D43B38;
+  margin: 130px 0 0 55%;
+  animation: vormen 2.4s 1;
+}
+
+#vierkant1, #vierkant2, #vierkant3, #vierkant4{
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+#vierkant1 {
+  width: 3%;
+  padding-top: 3%;
+  background-color: #06CB79;
+  margin: 80px 0 0 25%;
+  animation: vormen 2s 1;
+}
+#vierkant2 {
+  width: 2%;
+  padding-top: 2%;
+  background-color: #fff;
+  margin: 300px 0 0 66%;
+  animation: vormen 1.6s 1;
+}
+#vierkant3 {
+  width: 3%;
+  padding-top: 3%;
+  background-color: #06CB79;
+  margin: 263px 0 0 52%;
+  animation: vormen 2.6s 1;
+}
+#vierkant4 {
+  width: 3.5%;
+  padding-top: 3.5%;
+  background-color: #fff;
+  margin: 600px 0 0 31%;
+  animation: vormen 2.4s 1;
+}
+@keyframes vormen {
+  0% {top: -100%;}
+  25% {top: -100%;}
+  100% {top: 0;}
+}
+
+/*---------- Lettertypes ----------*/
+h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 60px;
+  color: #fff;
+  opacity: 10%;
+  animation: kop 4.2s 1;
+}
+span {
+  color: #06CB79;
+  animation: kop 4.2s 1;
+}
+#kop1 {
+  margin: 250px 0 0 10%;
+}
+#kop2 {
+  margin: -25px 0 0 15%;
+}
+@keyframes kop {
+  0% {color: transparent;}
+  70% {color: transparent;}
+  100% {color: ;}
+}
+
+/*---------- main ----------*/
+main {
+  margin-top: 25%;
+  background-color: #fff;
+  padding: 10%;
+}
+
+/*---------- @media ----------*/
+@media screen and (min-width: 940px) {
+  h1 {
+    font-size: 100px;
+    margin-top: 20px;
+  }
+  #kop2 {
+    margin-top: -50px;
+  }
+  .gezicht {
+    margin-top: -400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gezicht {
+    display: none;
+  }
+  
+}

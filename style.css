@@ -17,132 +17,410 @@ html, body {
     overflow-x: hidden;
 }
 body {
-  background-image: url("Afbeelding.png");
+  background-color: #162632;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  min-width: 275px;
+}
+.roll {
+  animation: roll 5s 1;
 }
 .gezicht {
   position: absolute;
-  width: 25%;
-  margin: -320px 0 0 70%;
+  width: 20%;
+  margin: 100px 0 0 65%;
+}
+
+@keyframes roll {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
 
 /*---------- Vormen ----------*/
-#circel1, #circel2, #circel3, #circel4, #circel5{
-  border-radius: 100%;
+#circel4, #circel5, #circel6, #circel7, #circel8, #circel9, #circel10, #circel11 {
   position: fixed;
   top: 0;
   z-index: -1;
-}
-#circel1 {
-  width: 6.5%;
-  padding-top: 6.5%;
-  background-color: #D43B38;
-  margin: 64px 0 0 10%;
-  animation: vormen 2.6s 1;
-}
-#circel2 {
-  width: 5.2%;
-  padding-top: 5.2%;
-  background-color: #D43B38;
-  margin: 505px 0 0 48%;
-  animation: vormen 2.7s 1;
-}
-#circel3 {
-  width: 2.5%;
-  padding-top: 2.5%;
-  background-color: #fff;
-  margin: 530px 0 0 7%;
-  animation: vormen 2.9s 1;
-}
-#circel4 {
-  width: 3%;
-  padding-top: 3%;
-  background-color: #fff;
-  margin: 155px 0 0 40%;
-  animation: vormen 3.2s 1;
-}
-#circel5 {
-  width: 2%;
-  padding-top: 2%;
-  background-color: #D43B38;
-  margin: 130px 0 0 55%;
-  animation: vormen 2.4s 1;
+  border-radius: 50%;
 }
 
-#vierkant1, #vierkant2, #vierkant3, #vierkant4{
+#circel, #circel2, #circel3, #u-vorm, #u-vorm2, #u-vorm3  {
   position: fixed;
   top: 0;
   z-index: -1;
+  display: inline-block;
+  width: 0.4em;
+  box-sizing: content-box;
+  height: 0.4em;
+  border: 0.1em solid #06CB79;
+  border-radius: 50%;
 }
-#vierkant1 {
-  width: 3%;
-  padding-top: 3%;
-  background-color: #06CB79;
-  margin: 80px 0 0 25%;
-  animation: vormen 2s 1;
+#circel {
+  margin: 18vh 0 0 50%;
+  font-size: 7em;
+  border: 0.09em solid #06CB79;
+  animation: vormen 3.6s 1;
+
 }
-#vierkant2 {
-  width: 2%;
-  padding-top: 2%;
-  background-color: #fff;
-  margin: 300px 0 0 66%;
-  animation: vormen 1.6s 1;
+#circel2 {
+  margin: 85vh 0 0 70%;
+  font-size: 6em;
+  border: 0.08em solid #06CB79;
+  animation: vormen 1.7s 1;
 }
-#vierkant3 {
-  width: 3%;
-  padding-top: 3%;
-  background-color: #06CB79;
-  margin: 263px 0 0 52%;
-  animation: vormen 2.6s 1;
+#circel3 {
+  margin: 55vh 0 0 7%;
+  font-size: 9em;
+  border: 0.07em solid #06CB79;
+  animation: vormen 2.7s 1;
 }
-#vierkant4 {
-  width: 3.5%;
-  padding-top: 3.5%;
-  background-color: #fff;
-  margin: 600px 0 0 31%;
+
+#u-vorm {
+  margin: 10vh 0 0 80%;
+  font-size: 6.5em;
+  animation: vormen 3.8s 1;
+}
+#u-vorm2 {
+  margin: 8vh 0 0 15%;
+  font-size: 7.5em;
+  border: 0.07em solid #06CB79;
+  transform: rotate(140deg);
+  animation: vormen-reverse 2.5s 1;
+}
+#u-vorm3 {
+  margin: 80vh 0 0 20%;
+  font-size: 5em;
+  animation: vormen 2.2s 1;
+}
+#u-vorm3:before{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: #162632;
+  width: 0.35em;
+  height: 0.08em;
+  padding: 15px 25px;
+  margin: 14px 0px 0px -20px;
+}
+
+#u-vorm:before, #u-vorm2:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: #162632;
+  width: 0.35em;
+  height: 0.08em;
+  padding: 15px 25px;
+  margin: 20px 0px 0px -20px;
+}
+
+#circel4 {
+  margin: 25vh 0 0 10%;
+  font-size: 9em;
+  border: 0.07em solid #fff;
+  animation: vormen 2.9s 1;
+}
+#circel5 {
+  margin: 35vh 0 0 18%;
+  font-size: 13em;
+  border: 0.07em solid #fff;
   animation: vormen 2.4s 1;
 }
+#circel6 {
+  margin: 75vh 0 0 58%;
+  font-size: 15em;
+  border: 0.07em solid #fff;
+  animation: vormen 2.3s 1;
+}
+#circel7 {
+  margin: 23vh 0 0 64%;
+  font-size: 7em;
+  border: 0.07em solid #fff;
+  animation: vormen 3.4s 1;
+}
+#circel8 {
+  margin: 75vh 0 0 5%;
+  font-size: 11em;
+  border: 0.07em solid #fff;
+  animation: vormen 2.4s 1;
+}
+#circel9 {
+  margin: 70vh 0 0 90%;
+  font-size: 6em;
+  border: 0.07em solid #fff;
+  animation: vormen 1.5s 1;
+}
+#circel10 {
+  margin: 68vh 0 0 70%;
+  font-size: 8em;
+  border: 0.07em solid #fff;
+  animation: vormen 3.5s 1;
+}
+#circel11 {
+  margin: 30vh 0 0 56%;
+  font-size: 11em;
+  border: 0.07em solid #fff;
+  animation: vormen 2.9s 1;
+}
+
 @keyframes vormen {
-  0% {top: -100%;}
-  25% {top: -100%;}
-  100% {top: 0;}
+  0% {top: -150%; transform: rotate(0deg);}
+  85% {top: 0%;}
+  100% {transform: rotate(1440deg);}
+}
+
+@keyframes vormen-reverse {
+  0% {top: -150%; transform: rotate(0deg);}
+  75% {top: 0%;}
+  100% {transform: rotate(-1660deg);}
 }
 
 /*---------- Lettertypes ----------*/
 h1 {
   font-family: Poppins;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 10px;
   color: #fff;
-  opacity: 10%;
-  animation: kop 4.2s 1;
+  animation: kop 3.2s 1;
 }
 span {
   color: #06CB79;
-  animation: kop 4.2s 1;
+  animation: kop 3.2s 1;
+}
+#age {color: black; animation: none;}
+#i {
+  display: static;
+  margin: -250px 0 0 8%;
+  cursor: alias;
 }
 #kop1 {
-  margin: 250px 0 0 10%;
+  margin: 35vh 0 0 37%;
+  font-size: 85px;
 }
 #kop2 {
-  margin: -25px 0 0 15%;
+  margin: -30px 0 0 40%;
+  font-size: 85px;
 }
+
 @keyframes kop {
-  0% {color: transparent;}
-  70% {color: transparent;}
-  100% {color: ;}
+  0% {opacity: 0;}
+  70% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
-/*---------- main ----------*/
+h2 {
+  font-family: Poppins;
+  font-weight: 700;
+  color: #2E2E2E;
+  font-size: 50px;
+  padding-top: 10%;
+  margin-bottom: 30px;
+}
+h2:after {
+  position: absolute;
+  margin: 70px -223px;
+  content:"";
+  width: 222px;
+  border-bottom: 6px solid #06CB79;
+}
+#h2:after {
+  margin: 70px -223px 0 -219px;
+}
+
+h3{
+  font-family: poppins;
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+}
+h3 span {
+  animation: none;
+  font-weight: 800;
+}
+
+h4 {
+  font-family: Roboto;
+  color: white;
+  padding-top: 30px;
+  color: white;
+  width: 330px;
+  height: 300px;
+}
+
+p {
+  margin-top: 20px;
+  font-family: Roboto;
+  font-size: 20px;
+}
+.comming {
+  color: #06CB79;
+  margin-top: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes h4 {
+  0% {color: transparent; padding-top: 300px;}
+  0.000000000000000001% {}
+  100% {color: #fff;}
+}
+/*---------- Main ----------*/
 main {
-  margin-top: 25%;
+  margin-top: 85vh;
   background-color: #fff;
-  padding: 10%;
+  padding: 0 25% 10% 10%;
+  z-index: 10;
 }
 
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  width: 140%;
+}
+
+article {
+  width: 30%;
+  min-width: 350px;
+  height: 350px;
+  margin: 10px;
+  transition: 0.3s;
+  background-repeat: no-repeat;
+  position: relative;
+}
+article:hover .overlay {
+  opacity: 0.95;
+}
+article h3 {
+  margin: 20px;
+  z-index: 4;
+}
+
+article:nth-child(1) {
+  background-image: url(images/python.jpg);
+  background-position: center bottom;
+  background-size: 105%;
+}
+article:nth-child(2) {
+  background-image: url(images/bill.jpg);
+  background-position: center;
+  background-size: 155%;
+}
+article:nth-child(3) {
+  background-image: url(images/aboriginal.png);
+  background-position: center top;
+  background-size: 155%;
+}
+article:nth-child(4) {
+  background-image: url(images/reijinga.png);
+  background-position: center;
+  background-size: 185%;
+}
+.overlay {
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #162632;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.overlay p{
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.overlay .comming {
+  margin-left: 0;
+  color: #06CB79;
+}
+.overlay .button {
+  text-decoration: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 60px;
+  color: white;
+  background-color: #06cb79;
+  text-align: center;
+  line-height: 60px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 1px;
+}
+article .button:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 4.5px solid #06cb79;
+  line-height: 50px;
+}
+
+@keyframes vergroot {
+  0% {color: transparent; background-color: #00000000; /*padding-top: 320px;*/}
+  0.0000000000000000015% {color: #ffffffff; background-color: #1e1e1eff; /*padding-top: 30px;*/}
+}
+
+/*---------- Contact ----------*/
+.contact {
+  height: 90vh;
+  padding: 10%;
+  min-width: 140px;
+}
+.contact .box {
+  background-color: #fff;
+  width: 70%;
+  padding: 3%;
+  /* min-width: 1000px; */
+  /* padding-top: 5%; */
+  margin-left: 15%;
+  /* margin-top: 20%; */
+  /* line-height: 50vh; */
+}
+.textbox {
+  color: red;
+  width: 100%;
+  margin: 30px 0 0 0px;
+}
+.textbox a {
+  text-decoration: none;
+  font-family: 'poppins', sans-serif;
+  color: #000;
+}
+/*---------- Footer ----------*/
+footer {
+  background-color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+footer p {
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.top{
+  position: sticky;
+  float: right;
+  top: 0;
+  margin-top: -120px;
+  background-color: red;
+  float: right;
+  list-style-type: none;
+  padding: 20px 45px;
+  border-radius: 10px 0 0 10px;
+  background-color: #06cb79;
+  color: #fff;
+  font-family: 'poppins', sans-serif;
+}
 /*---------- @media ----------*/
 @media screen and (min-width: 940px) {
   h1 {
@@ -153,13 +431,46 @@ main {
     margin-top: -50px;
   }
   .gezicht {
-    margin-top: -400px;
+    margin-top: -100px;
   }
 }
-
+@media screen and (max-width: 1200px) {
+  .contact .box{
+    padding: 10%;
+  }
+}
 @media screen and (max-width: 800px) {
   .gezicht {
     display: none;
   }
-  
+  .contact .box {
+    width: 100%;
+    padding-top: 250px;
+    margin: 0;
+  }
+  main {
+    padding: 5%;
+  }
+  .contact .box{
+    padding-top: 100px;
+  }
+  h2:after {
+    border-bottom: 5px;
+  }
+  .box {
+    width: 100%;
+  }
 }
+/* @media screen and (max-width: 415px) {
+  article {
+    width: 100%;
+    text-align: right;
+    max-width: 310px;
+  }
+  h3 {
+    text-align: right;
+  }
+  article a {
+    margin-right: -30px;
+  }
+} */
